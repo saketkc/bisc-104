@@ -1,0 +1,93 @@
+\documentclass[11pt,paper=a4,answers]{exam}
+\usepackage{graphicx,lastpage}
+\usepackage{upgreek}
+\usepackage{censor}
+\usepackage{enumitem}
+
+\censorruledepth=-.2ex
+\censorruleheight=.1ex
+\hyphenpenalty 10000
+\usepackage[paperheight=10.5in,paperwidth=8.27in,bindingoffset=0in,left=0.8in,right=1in,
+top=0.7in,bottom=1in,headsep=.5\baselineskip]{geometry}
+\flushbottom
+\usepackage[normalem]{ulem}
+\renewcommand\ULthickness{2pt}   %%---> For changing thickness of underline
+\setlength\ULdepth{1.5ex}%\maxdimen ---> For changing depth of underline
+\renewcommand{\baselinestretch}{1}
+\pagestyle{empty}
+
+\pagestyle{headandfoot}
+\headrule
+\newcommand{\continuedmessage}{%
+\ifcontinuation{\footnotesize Question \ContinuedQuestion\ continues\ldots}{}%
+ }
+ 
+\runningheader{\footnotesize BISC}
+{\footnotesize BISC 104 --- Lab}
+{\footnotesize Page \thepage\ of \numpages}
+\footrule
+\footer{\vspace*{5pt} 
+}
+{}
+{\ifincomplete{\footnotesize Question \IncompleteQuestion\ continues
+on the next page\ldots}{\iflastpage{\footnotesize End of exam}{\footnotesize Please go        on to the next page\ldots}}}
+
+\usepackage{cleveref}
+\crefname{figure}{figure}{figures}
+\crefname{question}{question}{questions}
+%==============================================================
+\begin{document}
+
+%% \thispagestyle{empty}
+
+\noindent
+\begin{minipage}[l]{.5\textwidth}%
+\noindent
+Name: \underline{\hspace{7cm}}
+%\includegraphics[width=1.5\textwidth]{123}
+\end{minipage}
+\hfill
+\begin{minipage}[r]{0.22\textwidth}%
+\begin{center}
+{%\Large Name of University \\[2pt]
+\large BISC 104 -- Quiz 3\\[2pt]} %{(\small Code: Math-506)}  \par}
+%  \vspace{0.5cm}
+\end{center}
+\end{minipage}
+\par
+\noindent
+\uline{Time: 5 minutes   \hfill \normalsize\emph{\underline{Session 05}} \hfill        Maximum Points: 07}
+\begin{questions}
+
+\pointsinrightmargin
+\pointsdroppedatright
+\marksnotpoints
+%\marginpointname{mark}
+\pointpoints{mark}{marks}
+\pointformat{\boldmath\themarginpoints}
+\bracketedpoints
+\question[07]
+\label{Q:perunit}
+Label the following parts of brain:
+
+
+\begin{enumerate}[label=\alph*]
+\item  \underline{\hspace{3cm}} 
+\item  \underline{\hspace{3cm}} 
+\item  \underline{\hspace{3cm}} 
+\item  \underline{\hspace{3cm}} 
+\item  \underline{\hspace{3cm}} 
+\item  \underline{\hspace{3cm}} 
+\item  \underline{\hspace{3cm}} 
+\end{enumerate}
+\droppoints
+\begin{figure}[ht]
+\includegraphics[width=\linewidth]{brain}
+\end{figure}
+
+
+\end{questions}
+\begin{center}
+\rule{\textwidth}{1pt}
+\end{center}
+\end{document} 

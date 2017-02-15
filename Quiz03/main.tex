@@ -1,0 +1,122 @@
+\documentclass[11pt,paper=a4,answers]{exam}
+\usepackage{graphicx,lastpage}
+\usepackage{upgreek}
+\usepackage{censor}
+\usepackage{enumitem}
+
+\censorruledepth=-.2ex
+\censorruleheight=.1ex
+\hyphenpenalty 10000
+\usepackage[paperheight=10.5in,paperwidth=8.27in,bindingoffset=0in,left=0.8in,right=1in,
+top=0.7in,bottom=1in,headsep=.5\baselineskip]{geometry}
+\flushbottom
+\usepackage[normalem]{ulem}
+\renewcommand\ULthickness{2pt}   %%---> For changing thickness of underline
+\setlength\ULdepth{1.5ex}%\maxdimen ---> For changing depth of underline
+\renewcommand{\baselinestretch}{1}
+\pagestyle{empty}
+
+\pagestyle{headandfoot}
+\headrule
+\newcommand{\continuedmessage}{%
+\ifcontinuation{\footnotesize Question \ContinuedQuestion\ continues\ldots}{}%
+ }
+ 
+\runningheader{\footnotesize BISC}
+{\footnotesize BISC 104 --- Lab}
+{\footnotesize Page \thepage\ of \numpages}
+\footrule
+\footer{\vspace*{5pt} 
+}
+{}
+{\ifincomplete{\footnotesize Question \IncompleteQuestion\ continues
+on the next page\ldots}{\iflastpage{\footnotesize End of exam}{\footnotesize Please go        on to the next page\ldots}}}
+
+\usepackage{cleveref}
+\crefname{figure}{figure}{figures}
+\crefname{question}{question}{questions}
+%==============================================================
+\begin{document}
+
+%% \thispagestyle{empty}
+
+\noindent
+\begin{minipage}[l]{.5\textwidth}%
+\noindent
+Name: \underline{\hspace{7cm}}
+%\includegraphics[width=1.5\textwidth]{123}
+\end{minipage}
+\hfill
+\begin{minipage}[r]{0.22\textwidth}%
+\begin{center}
+{%\Large Name of University \\[2pt]
+\large BISC 104 -- Quiz 3\\[2pt]} %{(\small Code: Math-506)}  \par}
+%  \vspace{0.5cm}
+\end{center}
+\end{minipage}
+\par
+\noindent
+\uline{Time: 5 minutes   \hfill \normalsize\emph{\underline{Session 04}} \hfill        Maximum Points: 07}
+\begin{questions}
+
+\pointsinrightmargin
+\pointsdroppedatright
+\marksnotpoints
+%\marginpointname{mark}
+\pointpoints{mark}{marks}
+\pointformat{\boldmath\themarginpoints}
+\bracketedpoints
+\question[01]
+\label{Q:perunit}
+A motor unit consists of \underline{\hspace{3cm}} neuron.
+\droppoints
+
+\question[01]
+\label{Q:perunit}
+Strength of striated muscle is \underline{\hspace{3cm}} proportional to number of motor units activated.
+\droppoints
+\begin{enumerate}[label=\alph*]
+\item directly
+\item inversely
+\end{enumerate}
+
+\question[01]
+Area under curve for the potential generated \underline{\hspace{3cm}} as the force applied by muscle  
+increases.
+\droppoints
+\begin{enumerate}[label=\alph*]
+\item increases
+\item decreases
+\item remains constant
+\end{enumerate}
+
+
+\question[01]
+Relation between absolute integral under EMG signals and the absolute integral under the muscle contraction
+is \underline{\hspace{3cm}}
+\droppoints
+\begin{enumerate}[label=\alph*]
+\item non-linear
+\item linear
+\item constant
+\end{enumerate}
+
+\question[02]
+The amplitude of the EMG signal and the force of contraction, as measured by the absolute
+integrals, increase because:
+\droppoints
+\begin{enumerate}[label=\alph*]
+\item finite number of fibers are firing more often
+\item more number of fibers recruited to fire
+\item both
+\end{enumerate}
+
+\question[01]
+Refractory period is defined as the short period immediately following one stimulus when the muscles do not respond to the second stimulus. Muscle fibers do not have refractory period. (True/False)
+\droppoints
+
+\end{questions}
+\begin{center}
+\rule{\textwidth}{1pt}
+\end{center}
+\end{document} 

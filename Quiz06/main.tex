@@ -1,0 +1,131 @@
+\documentclass[11pt,paper=a4,answers]{exam}
+\usepackage{graphicx,lastpage}
+\usepackage{upgreek}
+\usepackage{censor}
+\usepackage{enumitem}
+
+\censorruledepth=-.2ex
+\censorruleheight=.1ex
+\hyphenpenalty 10000
+\usepackage[paperheight=10.5in,paperwidth=8.27in,bindingoffset=0in,left=0.8in,right=1in,
+top=0.7in,bottom=1in,headsep=.5\baselineskip]{geometry}
+\flushbottom
+\usepackage[normalem]{ulem}
+\renewcommand\ULthickness{2pt}   %%---> For changing thickness of underline
+\setlength\ULdepth{1.5ex}%\maxdimen ---> For changing depth of underline
+\renewcommand{\baselinestretch}{1}
+\pagestyle{empty}
+
+\pagestyle{headandfoot}
+\headrule
+\newcommand{\continuedmessage}{%
+\ifcontinuation{\footnotesize Question \ContinuedQuestion\ continues\ldots}{}%
+ }
+ 
+\runningheader{\footnotesize BISC}
+{\footnotesize BISC 104 --- Lab}
+{\footnotesize Page \thepage\ of \numpages}
+\footrule
+\footer{\vspace*{5pt} 
+}
+{}
+{\ifincomplete{\footnotesize Question \IncompleteQuestion\ continues
+on the next page\ldots}{\iflastpage{\footnotesize End of exam}{\footnotesize Please go        on to the next page\ldots}}}
+
+\usepackage{cleveref}
+\crefname{figure}{figure}{figures}
+\crefname{question}{question}{questions}
+%==============================================================
+\begin{document}
+
+%% \thispagestyle{empty}
+
+\noindent
+\begin{minipage}[l]{.5\textwidth}%
+\noindent
+Name: \underline{\hspace{7cm}}
+%\includegraphics[width=1.5\textwidth]{123}
+\end{minipage}
+\hfill
+\begin{minipage}[r]{0.22\textwidth}%
+\begin{center}
+{%\Large Name of University \\[2pt]
+\large BISC 104 -- Quiz 5\\[2pt]} %{(\small Code: Math-506)}  \par}
+%  \vspace{0.5cm}
+\end{center}
+\end{minipage}
+\par
+\noindent
+\uline{Time: 5 minutes   \hfill \normalsize\emph{\underline{Session 07}} \hfill        Maximum Points: 07}
+\begin{questions}
+
+\pointsinrightmargin
+\pointsdroppedatright
+\marksnotpoints
+%\marginpointname{mark}
+\pointpoints{mark}{marks}
+\pointformat{\boldmath\themarginpoints}
+\bracketedpoints
+\question[01]
+The ability of heart to trigger its own contractions is called \underline{\hspace{3cm}}.
+\label{Q:perunit}
+\droppoints
+
+\question[01]
+\label{Q:perunit}
+Symphathetic nervous system \underline{\hspace{3cm}} heart rate.
+\droppoints
+\begin{enumerate}[label=\alph*]
+\item increases
+\item decreases
+\end{enumerate}
+
+
+\question[01]
+\label{Q:perunit}
+Parasymphathetic nervous system \underline{\hspace{3cm}} heart rate.
+\droppoints
+\begin{enumerate}[label=\alph*]
+\item increases
+\item decreases
+\end{enumerate}
+
+
+\question[01]
+\label{Q:perunit}
+Vagus nerves are part of the \underline{\hspace{3cm}} nervous system.
+\droppoints
+\begin{enumerate}[label=\alph*]
+\item Parasymphathetic
+\item Symphathetic
+\end{enumerate}
+
+
+\question[01]
+\label{Q:perunit}
+Sinoatrial(SA) node generates action potentials at a frequency of 100 beats per minute even though the observed average heart beat normally is around 70 beats per minute. This is result of the push-pull system we discussed. In terms of degree of influence, which of the following is \textbf{true}:
+\droppoints
+\begin{enumerate}[label=\alph*]
+\item Parasymphathetic nervous system has slightly more influence over symphathetic
+\item Symphathetic nervous system has slightly more influence over parasymphathetic
+\item Both systems are equally influential
+\item None of the above
+\end{enumerate}
+
+\question[02]
+\label{Q:perunit}
+In your activity 1, you characterized the refractory period of the heart. This involved applying stimuli at different points of time. The reponse changed depending on 'where'/'when' you applied the stimulus. The refractory period lasted between:
+\droppoints
+
+\begin{enumerate}[label=\alph*]
+\item Beginning of articular contraction to beginning of ventricular contraction
+\item Beginning of ventricular contraction to peak of ventricular contraction
+\item Peak of ventricular contraction to end of ventricular relaxation
+\item None of the above
+\end{enumerate}
+
+\end{questions}
+\begin{center}
+\rule{\textwidth}{1pt}
+\end{center}
+\end{document} 

@@ -1,0 +1,98 @@
+\documentclass[11pt,paper=a4,answers]{exam}
+\usepackage{graphicx,lastpage}
+\usepackage{upgreek}
+\usepackage{censor}
+\censorruledepth=-.2ex
+\censorruleheight=.1ex
+\hyphenpenalty 10000
+\usepackage[paperheight=10.5in,paperwidth=8.27in,bindingoffset=0in,left=0.8in,right=1in,
+top=0.7in,bottom=1in,headsep=.5\baselineskip]{geometry}
+\flushbottom
+\usepackage[normalem]{ulem}
+\renewcommand\ULthickness{2pt}   %%---> For changing thickness of underline
+\setlength\ULdepth{1.5ex}%\maxdimen ---> For changing depth of underline
+\renewcommand{\baselinestretch}{1}
+\pagestyle{empty}
+
+\pagestyle{headandfoot}
+\headrule
+\newcommand{\continuedmessage}{%
+\ifcontinuation{\footnotesize Question \ContinuedQuestion\ continues\ldots}{}%
+ }
+\runningheader{\footnotesize BISC}
+{\footnotesize BISC 104 --- Lab}
+{\footnotesize Page \thepage\ of \numpages}
+\footrule
+\footer{\vspace*{5pt}\footnotesize Student's name: \underline{\hspace{7cm}}}
+{}
+{\ifincomplete{\footnotesize Question \IncompleteQuestion\ continues
+on the next page\ldots}{\iflastpage{\footnotesize End of exam}{\footnotesize Please go        on to the next page\ldots}}}
+
+\usepackage{cleveref}
+\crefname{figure}{figure}{figures}
+\crefname{question}{question}{questions}
+%==============================================================
+\begin{document}
+
+%% \thispagestyle{empty}
+
+\noindent
+\begin{minipage}[l]{.1\textwidth}%
+\noindent
+%\includegraphics[width=1.5\textwidth]{123}
+\end{minipage}
+\hfill
+\begin{minipage}[r]{\textwidth}%
+\begin{center}
+{%\Large Name of University \\[2pt]
+\large BISC 104 -- Quiz 1\\[2pt]} %{(\small Code: Math-506)}  \par}
+%  \vspace{0.5cm}
+\end{center}
+\end{minipage}
+\par
+\noindent
+\uline{Time: 7 minutes   \hfill \normalsize\emph{\underline{Session 01-02}} \hfill        Maximum Points: 07}
+\begin{questions}
+
+\pointsinrightmargin
+\pointsdroppedatright
+\marksnotpoints
+%\marginpointname{mark}
+\pointpoints{mark}{marks}
+\pointformat{\boldmath\themarginpoints}
+\bracketedpoints
+\question[01]
+\label{Q:perunit}
+A variable which can be manipulated by the experimenter is called \underline{\hspace{3cm}} variable.
+\droppoints
+
+\question[01]
+A variable which should remain \textbf{unchanged} throughout the experiment is called \underline{\hspace{3cm}} variable.
+\droppoints
+
+\question[01]
+A variable whose value depends on another variable(s) is called \underline{\hspace{3cm}} variable.
+\droppoints
+
+\vspace*{12pt}
+Consider a baking experiment where the hypothesis is "if the amount of sugar used increases, then volume of bread increases". It has been strongly suggested that temperature should not be allowed to vary, else it will lead to a higher or lower volume of bread. Based on \textbf{this} experiment, identify the variables:
+
+\question[02]
+Control variable: \underline{\hspace{5cm}}
+\droppoints
+
+\question[01]
+Dependent variable: \underline{\hspace{5cm}}
+\droppoints
+
+\question[01]
+Independent variable: \underline{\hspace{5cm}}
+\droppoints
+
+
+ 
+\end{questions}
+\begin{center}
+\rule{.5\textwidth}{1pt}
+\end{center}
+\end{document} 

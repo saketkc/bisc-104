@@ -1,0 +1,117 @@
+\documentclass[11pt,paper=a4,answers]{exam}
+\usepackage{graphicx,lastpage}
+\usepackage{upgreek}
+\usepackage{censor}
+\usepackage{enumitem}
+
+\censorruledepth=-.2ex
+\censorruleheight=.1ex
+\hyphenpenalty 10000
+\usepackage[paperheight=10.5in,paperwidth=8.27in,bindingoffset=0in,left=0.8in,right=1in,
+top=0.7in,bottom=1in,headsep=.5\baselineskip]{geometry}
+\flushbottom
+\usepackage[normalem]{ulem}
+\renewcommand\ULthickness{2pt}   %%---> For changing thickness of underline
+\setlength\ULdepth{1.5ex}%\maxdimen ---> For changing depth of underline
+\renewcommand{\baselinestretch}{1}
+\pagestyle{empty}
+
+\pagestyle{headandfoot}
+\headrule
+\newcommand{\continuedmessage}{%
+\ifcontinuation{\footnotesize Question \ContinuedQuestion\ continues\ldots}{}%
+ }
+ 
+\runningheader{\footnotesize BISC}
+{\footnotesize BISC 104 --- Lab}
+{\footnotesize Page \thepage\ of \numpages}
+\footrule
+\footer{\vspace*{5pt} 
+}
+{}
+{\ifincomplete{\footnotesize Question \IncompleteQuestion\ continues
+on the next page\ldots}{\iflastpage{\footnotesize End of exam}{\footnotesize Please go        on to the next page\ldots}}}
+
+\usepackage{cleveref}
+\crefname{figure}{figure}{figures}
+\crefname{question}{question}{questions}
+%==============================================================
+\begin{document}
+
+%% \thispagestyle{empty}
+
+\noindent
+\begin{minipage}[l]{.5\textwidth}%
+\noindent
+Name: \underline{\hspace{7cm}}
+%\includegraphics[width=1.5\textwidth]{123}
+\end{minipage}
+\hfill
+\begin{minipage}[r]{0.25\textwidth}%
+\begin{center}
+{%\Large Name of University \\[2pt]
+\large BISC 104 -- Quiz 2\\[2pt]} %{(\small Code: Math-506)}  \par}
+%  \vspace{0.5cm}
+\end{center}
+\end{minipage}
+\par
+\noindent
+\uline{Time: 7 minutes   \hfill \normalsize\emph{\underline{Session 03}} \hfill        Maximum Points: 07}
+\begin{questions}
+
+\pointsinrightmargin
+\pointsdroppedatright
+\marksnotpoints
+%\marginpointname{mark}
+\pointpoints{mark}{marks}
+\pointformat{\boldmath\themarginpoints}
+\bracketedpoints
+\question[01]
+\label{Q:perunit}
+Mechanical response of a muscle to single electrical stimulus is called \underline{\hspace{3cm}}.
+\droppoints
+
+\question[01]
+Period of time that elapses between the generation of an active potential and start of muscle contraction is called \underline{\hspace{3cm}} period and it usually remains constant irrespective of the force applied.
+\droppoints
+
+\question[01]
+Which of the following is \textbf{least likely} to be affected by the potential(voltage) applied to muscle?
+\droppoints
+
+\begin{enumerate}[label=\alph*]
+\item Active force
+\item Passive force
+\item Latent period
+\end{enumerate}
+
+\question[02]
+If stimuli is applied frequently to muscle over a prolonged period, the muscle will
+tend to reach \underline{\hspace{3cm}} and the state is called \underline{\hspace{3cm}}:
+\droppoints
+
+\begin{enumerate}[label=\alph*]
+\item plateau, tetanus
+\item latent period, tetanus
+\item threshold, latent period
+\item fatigue, threshold
+\end{enumerate}
+
+
+\question[02]
+\textbf{Decline} in a muscle's ability to maintain a constant force of contraction after prolonged, repetitive stimulation is called :
+\droppoints
+
+\begin{enumerate}[label=\alph*]
+\item Fatigue
+\item Maximal voltage
+\item Threshold
+\end{enumerate}
+
+
+ 
+\end{questions}
+\begin{center}
+\rule{\textwidth}{1pt}
+\end{center}
+\end{document} 
